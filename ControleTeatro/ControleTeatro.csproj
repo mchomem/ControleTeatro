@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61044517-1542-4003-B660-F5CD70A72D63}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControleTeatro</RootNamespace>
+    <AssemblyName>ControleTeatro</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/ControleTeatro/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Controle Teatro.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dal.cs" />
+    <Compile Include="FormUtils.cs" />
+    <Compile Include="FrmAlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlterarSenha.Designer.cs">
+      <DependentUpon>FrmAlterarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadAgendSessaoTemporada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadAgendSessaoTemporada.Designer.cs">
+      <DependentUpon>FrmCadAgendSessaoTemporada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadClassificacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadClassificacao.Designer.cs">
+      <DependentUpon>FrmCadClassificacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadPecaTeatral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadPecaTeatral.Designer.cs">
+      <DependentUpon>FrmCadPecaTeatral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadSala.Designer.cs">
+      <DependentUpon>FrmCadSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadSessao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadSessao.Designer.cs">
+      <DependentUpon>FrmCadSessao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadTemporada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadTemporada.Designer.cs">
+      <DependentUpon>FrmCadTemporada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadTipoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadTipoUsuario.Designer.cs">
+      <DependentUpon>FrmCadTipoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadUsuario.Designer.cs">
+      <DependentUpon>FrmCadUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfigRegionais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfigRegionais.Designer.cs">
+      <DependentUpon>FrmConfigRegionais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHistVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHistVendas.Designer.cs">
+      <DependentUpon>FrmHistVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaRegistros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaRegistros.Designer.cs">
+      <DependentUpon>FrmListaRegistros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPDV.Designer.cs">
+      <DependentUpon>FrmPDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSobre.Designer.cs">
+      <DependentUpon>FrmSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.Designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cripto.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessaoUsuario.cs" />
+    <Compile Include="Usuario.cs" />
+    <EmbeddedResource Include="FrmAlterarSenha.resx">
+      <DependentUpon>FrmAlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadAgendSessaoTemporada.resx">
+      <DependentUpon>FrmCadAgendSessaoTemporada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadClassificacao.resx">
+      <DependentUpon>FrmCadClassificacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadPecaTeatral.resx">
+      <DependentUpon>FrmCadPecaTeatral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadSala.resx">
+      <DependentUpon>FrmCadSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadSessao.resx">
+      <DependentUpon>FrmCadSessao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadTemporada.resx">
+      <DependentUpon>FrmCadTemporada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadTipoUsuario.resx">
+      <DependentUpon>FrmCadTipoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadUsuario.resx">
+      <DependentUpon>FrmCadUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfigRegionais.resx">
+      <DependentUpon>FrmConfigRegionais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHistVendas.resx">
+      <DependentUpon>FrmHistVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaRegistros.resx">
+      <DependentUpon>FrmListaRegistros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPDV.resx">
+      <DependentUpon>FrmPDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSobre.resx">
+      <DependentUpon>FrmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controle Teatro.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slpash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_go.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_view_list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_view_list.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picture_warning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CapaPadrao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImagemNaoEncontrada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_suit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\television.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_curve.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teatro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BandeiraBrasil.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
