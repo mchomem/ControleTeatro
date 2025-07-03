@@ -8,14 +8,8 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Windows.Forms;
 
 namespace ControleTeatro
 {
@@ -239,7 +233,6 @@ namespace ControleTeatro
                 return;
             }
 
-
             // Antes de excluir o registro
             // Consulta se já existe a chave
             string sql = String.Empty;
@@ -275,7 +268,6 @@ namespace ControleTeatro
                     + "Detalhes: " + except.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
 
             // Exclui o registro.
             sql = "DELETE";
@@ -382,6 +374,5 @@ namespace ControleTeatro
                 FrmListaRegistros.RetValores = String.Empty;
             }
         }
-
     }
 }

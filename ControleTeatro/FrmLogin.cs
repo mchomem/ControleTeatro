@@ -8,15 +8,9 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Security.Cryptography;
+using System.Windows.Forms;
 
 namespace ControleTeatro
 {
@@ -166,7 +160,6 @@ namespace ControleTeatro
                     + "Detalhes: " + except.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

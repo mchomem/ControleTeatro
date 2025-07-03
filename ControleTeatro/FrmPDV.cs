@@ -8,14 +8,10 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace ControleTeatro
 {
@@ -186,7 +182,6 @@ namespace ControleTeatro
             }
         }
 
-
         private void FrmPDV_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F5)
@@ -195,12 +190,10 @@ namespace ControleTeatro
             }
         }
 
-
         private void btnEfetuarVenda_Click(object sender, EventArgs e)
         {
             EfetuarVenda();
         }
-
 
         public void EfetuarVenda()
         {
@@ -263,9 +256,7 @@ namespace ControleTeatro
                     return;
                 }
 
-
                 // Atualiza a quantidade de assentos para tabela SESSAO_TEMPORADA.
-
                 int assentoDebitado = Convert.ToInt32(cQtDispAssentos) - 1;
 
                 sql = "UPDATE ";
@@ -297,7 +288,5 @@ namespace ControleTeatro
                 MessageBox.Show(null, mensagem, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
         }
-
     }
 }
-

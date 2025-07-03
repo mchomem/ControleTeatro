@@ -8,14 +8,9 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace ControleTeatro
 {
@@ -600,7 +595,5 @@ namespace ControleTeatro
             this.txtVlBilhete.Text = x;
             this.txtVlBilhete.SelectAll();
         }
-
-
     }
 }
