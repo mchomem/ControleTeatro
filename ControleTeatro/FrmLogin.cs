@@ -11,6 +11,7 @@ using System;
 using System.Data.OleDb;
 using System.Security.Cryptography;
 using System.Windows.Forms;
+using ControleTeatro.Models;
 
 namespace ControleTeatro
 {

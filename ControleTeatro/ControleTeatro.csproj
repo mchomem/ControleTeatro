@@ -174,8 +174,8 @@
     <Compile Include="Cripto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SessaoUsuario.cs" />
-    <Compile Include="Usuario.cs" />
+    <Compile Include="Models\SessaoUsuario.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <EmbeddedResource Include="FrmAlterarSenha.resx">
       <DependentUpon>FrmAlterarSenha.cs</DependentUpon>
     </EmbeddedResource>

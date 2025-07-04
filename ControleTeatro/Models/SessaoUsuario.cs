@@ -7,12 +7,12 @@
  * Instituição: Faculdade Senac Porto Alegre - RS
  */
 
-namespace ControleTeatro
+namespace ControleTeatro.Models
 {
     /// <summary>
     /// Classe para tratar os dados de conexão lógica do usuário com a aplicação.
     /// </summary>
-    class SessaoUsuario
+    public class SessaoUsuario
     {
         private string nome;
         private string tipoUsuario;
@@ -23,12 +23,12 @@ namespace ControleTeatro
         public SessaoUsuario() { }
         
         // Sobrecarga do construtor da classe.
-        public SessaoUsuario(string pNome, string pTipoUsuario, string pDthr_login, string pDthr_logout)
+        public SessaoUsuario(string nome, string tipoUsuario, string dthr_login, string dthr_logout)
         {
-            this.Nome = pNome;
-            this.TipoUsuario = pTipoUsuario;
-            this.Dthr_login = pDthr_login;
-            this.Dthr_logout = pDthr_logout;
+            Nome = nome;
+            TipoUsuario = tipoUsuario;
+            Dthr_login = dthr_login;
+            Dthr_logout = dthr_logout;
         }
 
         // Propriedades  da classe ----------------------------

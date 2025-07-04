@@ -7,14 +7,9 @@
  * Instituição: Faculdade Senac Porto Alegre - RS
  */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace ControleTeatro
+namespace ControleTeatro.Models
 {
-    class Usuario
+    public class Usuario
     {
         private string codigo;
         private string nome;
@@ -22,12 +17,11 @@ namespace ControleTeatro
 
         public Usuario() { }
 
-        public Usuario(string pCodigo, string pNome, string pDataInclusao)
+        public Usuario(string codigo, string nome, string dataInclusao)
         {
-            // Propriedades recebem os parâmetros do construtor.
-            this.Codigo = pCodigo;
-            this.Nome = pNome;
-            this.DataInclusao = pDataInclusao;
+            Codigo = codigo;
+            Nome = nome;
+            DataInclusao = dataInclusao;
         }
 
         public string Codigo
