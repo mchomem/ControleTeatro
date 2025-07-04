@@ -11,6 +11,7 @@ using System;
 using System.Globalization;
 using System.Windows.Forms;
 using ControleTeatro.Models;
+using ControleTeatro.Views;
 
 namespace ControleTeatro
 {

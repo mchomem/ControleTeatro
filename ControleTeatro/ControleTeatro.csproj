@@ -68,163 +68,163 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dal.cs" />
-    <Compile Include="FormUtils.cs" />
-    <Compile Include="FrmAlterarSenha.cs">
+    <Compile Include="Helpers\FormHelper.cs" />
+    <Compile Include="Views\FrmAlterarSenha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAlterarSenha.Designer.cs">
+    <Compile Include="Views\FrmAlterarSenha.Designer.cs">
       <DependentUpon>FrmAlterarSenha.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCadAgendSessaoTemporada.cs">
+    <Compile Include="Views\FrmCadAgendSessaoTemporada.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadAgendSessaoTemporada.Designer.cs">
+    <Compile Include="Views\FrmCadAgendSessaoTemporada.Designer.cs">
       <DependentUpon>FrmCadAgendSessaoTemporada.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCadClassificacao.cs">
+    <Compile Include="Views\FrmCadClassificacao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadClassificacao.Designer.cs">
+    <Compile Include="Views\FrmCadClassificacao.Designer.cs">
       <DependentUpon>FrmCadClassificacao.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCadPecaTeatral.cs">
+    <Compile Include="Views\FrmCadPecaTeatral.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadPecaTeatral.Designer.cs">
+    <Compile Include="Views\FrmCadPecaTeatral.Designer.cs">
       <DependentUpon>FrmCadPecaTeatral.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCadSala.cs">
+    <Compile Include="Views\FrmCadSala.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadSala.Designer.cs">
+    <Compile Include="Views\FrmCadSala.Designer.cs">
       <DependentUpon>FrmCadSala.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCadSessao.cs">
+    <Compile Include="Views\FrmCadSessao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadSessao.Designer.cs">
+    <Compile Include="Views\FrmCadSessao.Designer.cs">
       <DependentUpon>FrmCadSessao.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCadTemporada.cs">
+    <Compile Include="Views\FrmCadTemporada.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadTemporada.Designer.cs">
+    <Compile Include="Views\FrmCadTemporada.Designer.cs">
       <DependentUpon>FrmCadTemporada.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCadTipoUsuario.cs">
+    <Compile Include="Views\FrmCadTipoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadTipoUsuario.Designer.cs">
+    <Compile Include="Views\FrmCadTipoUsuario.Designer.cs">
       <DependentUpon>FrmCadTipoUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCadUsuario.cs">
+    <Compile Include="Views\FrmCadUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadUsuario.Designer.cs">
+    <Compile Include="Views\FrmCadUsuario.Designer.cs">
       <DependentUpon>FrmCadUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmConfigRegionais.cs">
+    <Compile Include="Views\FrmConfigRegionais.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmConfigRegionais.Designer.cs">
+    <Compile Include="Views\FrmConfigRegionais.Designer.cs">
       <DependentUpon>FrmConfigRegionais.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmHistVendas.cs">
+    <Compile Include="Views\FrmHistVendas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmHistVendas.Designer.cs">
+    <Compile Include="Views\FrmHistVendas.Designer.cs">
       <DependentUpon>FrmHistVendas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmListaRegistros.cs">
+    <Compile Include="Views\FrmListaRegistros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmListaRegistros.Designer.cs">
+    <Compile Include="Views\FrmListaRegistros.Designer.cs">
       <DependentUpon>FrmListaRegistros.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLogin.cs">
+    <Compile Include="Views\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogin.Designer.cs">
+    <Compile Include="Views\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPDV.cs">
+    <Compile Include="Views\FrmPDV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPDV.Designer.cs">
+    <Compile Include="Views\FrmPDV.Designer.cs">
       <DependentUpon>FrmPDV.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPrincipal.cs">
+    <Compile Include="Views\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPrincipal.Designer.cs">
+    <Compile Include="Views\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSobre.cs">
+    <Compile Include="Views\FrmSobre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSobre.Designer.cs">
+    <Compile Include="Views\FrmSobre.Designer.cs">
       <DependentUpon>FrmSobre.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSplash.cs">
+    <Compile Include="Views\FrmSplash.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSplash.Designer.cs">
+    <Compile Include="Views\FrmSplash.Designer.cs">
       <DependentUpon>FrmSplash.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cripto.cs" />
+    <Compile Include="Helpers\CryptoHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\SessaoUsuario.cs" />
     <Compile Include="Models\Usuario.cs" />
-    <EmbeddedResource Include="FrmAlterarSenha.resx">
+    <EmbeddedResource Include="Views\FrmAlterarSenha.resx">
       <DependentUpon>FrmAlterarSenha.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCadAgendSessaoTemporada.resx">
+    <EmbeddedResource Include="Views\FrmCadAgendSessaoTemporada.resx">
       <DependentUpon>FrmCadAgendSessaoTemporada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCadClassificacao.resx">
+    <EmbeddedResource Include="Views\FrmCadClassificacao.resx">
       <DependentUpon>FrmCadClassificacao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCadPecaTeatral.resx">
+    <EmbeddedResource Include="Views\FrmCadPecaTeatral.resx">
       <DependentUpon>FrmCadPecaTeatral.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCadSala.resx">
+    <EmbeddedResource Include="Views\FrmCadSala.resx">
       <DependentUpon>FrmCadSala.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCadSessao.resx">
+    <EmbeddedResource Include="Views\FrmCadSessao.resx">
       <DependentUpon>FrmCadSessao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCadTemporada.resx">
+    <EmbeddedResource Include="Views\FrmCadTemporada.resx">
       <DependentUpon>FrmCadTemporada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCadTipoUsuario.resx">
+    <EmbeddedResource Include="Views\FrmCadTipoUsuario.resx">
       <DependentUpon>FrmCadTipoUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCadUsuario.resx">
+    <EmbeddedResource Include="Views\FrmCadUsuario.resx">
       <DependentUpon>FrmCadUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmConfigRegionais.resx">
+    <EmbeddedResource Include="Views\FrmConfigRegionais.resx">
       <DependentUpon>FrmConfigRegionais.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmHistVendas.resx">
+    <EmbeddedResource Include="Views\FrmHistVendas.resx">
       <DependentUpon>FrmHistVendas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmListaRegistros.resx">
+    <EmbeddedResource Include="Views\FrmListaRegistros.resx">
       <DependentUpon>FrmListaRegistros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLogin.resx">
+    <EmbeddedResource Include="Views\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPDV.resx">
+    <EmbeddedResource Include="Views\FrmPDV.resx">
       <DependentUpon>FrmPDV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPrincipal.resx">
+    <EmbeddedResource Include="Views\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSobre.resx">
+    <EmbeddedResource Include="Views\FrmSobre.resx">
       <DependentUpon>FrmSobre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSplash.resx">
+    <EmbeddedResource Include="Views\FrmSplash.resx">
       <DependentUpon>FrmSplash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
