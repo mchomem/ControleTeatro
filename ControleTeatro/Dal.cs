@@ -8,18 +8,15 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data.OleDb;
-using System.Windows.Forms;
 using System.IO;
+using System.Windows.Forms;
 
 namespace ControleTeatro
 {
-    class Dal
+    public class Dal
     {
-        public static OleDbConnection  conn;
+        public static OleDbConnection conn;
 
         public Dal() { }
 
@@ -41,9 +38,9 @@ namespace ControleTeatro
                     Directory.CreateDirectory(caminhoBase);
                 }
             }
-            catch(Exception except)
+            catch(Exception ex)
             {
-                throw except;
+                throw ex;
             }
 
             caminhoBase += "BDTEATRO.MDB";

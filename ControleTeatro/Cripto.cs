@@ -8,15 +8,12 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Security.Cryptography;
-
+using System.Text;
 
 namespace ControleTeatro
 {
-    class Cripto
+    public class Cripto
     {
         public Cripto() { }
 
@@ -49,15 +46,7 @@ namespace ControleTeatro
             // Create a StringComparer an compare the hashes.
             StringComparer comparer = StringComparer.OrdinalIgnoreCase;
 
-            if (0 == comparer.Compare(hashOfInput, hash))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return 0 == comparer.Compare(hashOfInput, hash);
         }
-
     }
 }
