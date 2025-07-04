@@ -125,7 +125,7 @@ namespace ControleTeatro
                     if (!(comando.ExecuteReader().HasRows))
                     {
                         MessageBox.Show(null, "Login inválido", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        FormUtils.InicializaControles(this.Controls);
+                        FormUtils.InicializarControles(this.Controls);
                         this.txtUsuario.Focus();
                         return;
                     }

@@ -32,12 +32,12 @@ namespace ControleTeatro
             this.lblUsuario.Text = Program.sessaoUsuario.Nome;
 
             // Centraliza este formulário.
-            FormUtils.CentralizaForm(this);
+            FormUtils.CentralizarForm(this);
         }
 
         private void tsbtnInicializar_Click(object sender, EventArgs e)
         {
-            FormUtils.InicializaControles(this.Controls);
+            FormUtils.InicializarControles(this.Controls);
         }
 
         private void tsbtnGravar_Click(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace ControleTeatro
             }
 
             // Verifia se existe um caractere apóstrofo em todas as caixas de texto do formulário.
-            if (FormUtils.VerificaCaracterProibido(this.Controls))
+            if (FormUtils.VerificarCaracterProibido(this.Controls))
             {
                 MessageBox.Show(null, "Não é permitido o uso de caracteres especiais ( ' / ) nos campos.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;

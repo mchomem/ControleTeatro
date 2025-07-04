@@ -20,7 +20,7 @@ namespace ControleTeatro
 
         private void FrmHistVendas_Load(object sender, EventArgs e)
         {
-            FormUtils.CentralizaForm(this);
+            FormUtils.CentralizarForm(this);
         }
 
         private void btListaRegistroExterna_Click(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace ControleTeatro
 
         private void tsbtnInicializar_Click(object sender, EventArgs e)
         {
-            FormUtils.InicializaControles(this.Controls);
+            FormUtils.InicializarControles(this.Controls);
             this.lblNomePeca.Text = String.Empty;
             this.rbnNaoOrd.Checked = true;
             this.lblResultado.Text = "0";

@@ -23,7 +23,7 @@ namespace ControleTeatro
         private void FrmConfigRegionais_Load(object sender, EventArgs e)
         {
             ObterConfiguracoesRegionais();
-            FormUtils.CentralizaForm(this);
+            FormUtils.CentralizarForm(this);
             this.Text += " da estação local: " + System.Environment.MachineName;
         }
 

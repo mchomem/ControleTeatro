@@ -32,7 +32,7 @@ namespace ControleTeatro
 
         private void FrmPDV_Load(object sender, EventArgs e)
         {
-            FormUtils.CentralizaForm(this);
+            FormUtils.CentralizarForm(this);
             this.PreencheGrade();
         }
 
@@ -246,7 +246,7 @@ namespace ControleTeatro
                     using (OleDbCommand comando = new OleDbCommand(sql, Dal.conn))
                     {
                         comando.ExecuteNonQuery();
-                        FormUtils.InicializaControles(this.Controls);
+                        FormUtils.InicializarControles(this.Controls);
                     }
                 }
                 catch (OleDbException except)

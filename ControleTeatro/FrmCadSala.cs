@@ -23,7 +23,7 @@ namespace ControleTeatro
         private void FrmCadSala_Load(object sender, EventArgs e)
         {
             // Centraliza este formulário.
-            FormUtils.CentralizaForm(this);
+            FormUtils.CentralizarForm(this);
         }
 
         private void FrmCadSala_FormClosing(object sender, FormClosingEventArgs e)
@@ -33,7 +33,7 @@ namespace ControleTeatro
 
         private void tsbtnInicializar_Click(object sender, EventArgs e)
         {
-            FormUtils.InicializaControles(this.Controls);
+            FormUtils.InicializarControles(this.Controls);
         }
 
         private void tsbtnGravar_Click(object sender, EventArgs e)
@@ -54,7 +54,7 @@ namespace ControleTeatro
             }
 
             // Verifia se existe um caractere apóstrofo em todas as caixas de texto do formulário.
-            if (FormUtils.VerificaCaracterProibido(this.Controls))
+            if (FormUtils.VerificarCaracterProibido(this.Controls))
             {
                 MessageBox.Show(null, "Não é permitido o uso de caracteres especiais ( ' | ) nos campos.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
@@ -164,7 +164,7 @@ namespace ControleTeatro
                 {
                     comando.ExecuteNonQuery();
                     MessageBox.Show(null, mensagem, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    FormUtils.InicializaControles(this.Controls);
+                    FormUtils.InicializarControles(this.Controls);
                 }
             }
             catch (OleDbException except)
@@ -258,7 +258,7 @@ namespace ControleTeatro
                     if (!(consulta.ExecuteReader().HasRows))
                     {
                         MessageBox.Show(null, "Não existe a chave informada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                        FormUtils.InicializaControles(this.Controls);
+                        FormUtils.InicializarControles(this.Controls);
                         return;
                     }
                 }
@@ -283,7 +283,7 @@ namespace ControleTeatro
                 {
                     exclusao.ExecuteNonQuery();
                     MessageBox.Show(null, "Registro excluido com sucesso", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    FormUtils.InicializaControles(this.Controls);
+                    FormUtils.InicializarControles(this.Controls);
                 }
             }
             catch (OleDbException except)

@@ -30,7 +30,6 @@ namespace ControleTeatro
             // Obter a formatação de data abreviada das Configurações de Região e Idioma do sistema operacional.
             string formatoData = CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern.ToString();
 
-
             if (formatoData != "dd/MM/yyyy")
             {
                 DialogResult dr;

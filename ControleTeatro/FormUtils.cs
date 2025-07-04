@@ -8,9 +8,6 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace ControleTeatro
@@ -18,13 +15,13 @@ namespace ControleTeatro
     /// <summary>
     /// Classe utilitária para formulários.
     /// </summary>
-    class FormUtils
+    public static class FormUtils
     {
         /// <summary>
         /// Método para centralizar formulários no Desktop.
         /// </summary>
         /// <param name="frm">Objeto do tipo formulário.</param>
-        public static void CentralizaForm(Form frm, bool mdiChield = false, Form frmParent = null)
+        public static void CentralizarForm(Form frm, bool mdiChield = false, Form frmParent = null)
         {
             // Se o formulário pertence a um formulário Mdi container.
             // Centraliza o formulário filho pelo formulário pai.
@@ -45,7 +42,7 @@ namespace ControleTeatro
         /// Inicializa os controles (TextBox, CheckBox, etc) de um formulário.
         /// </summary>
         /// <param name="controles">Coleção de controles do formulário.</param>
-        public static void InicializaControles(Control.ControlCollection controles)
+        public static void InicializarControles(Control.ControlCollection controles)
         {
             foreach (Control ctrl in controles)
             {
@@ -70,12 +67,11 @@ namespace ControleTeatro
                     (ctrl as MaskedTextBox).Text = String.Empty;
                 }
 
-
                 // Add mais controles conforme necessidade...
 
                 // Uso do método recursivo utilizando o objeto
                 // Control.ControlCollection como parâmetro.
-                InicializaControles(ctrl.Controls);
+                InicializarControles(ctrl.Controls);
             }
         }
 
@@ -85,7 +81,7 @@ namespace ControleTeatro
         /// </summary>
         /// <param name="controles">Coleção de controles do formulário.</param>
         /// <returns>Retorna true se for encontrado um caractere proibido na string de qualquer controle de caixa de texto.</returns>
-        public static bool VerificaCaracterProibido(Control.ControlCollection controles)
+        public static bool VerificarCaracterProibido(Control.ControlCollection controles)
         {
             bool existeApostrofo =  false;
 
@@ -106,12 +102,11 @@ namespace ControleTeatro
                     }
                 }
 
-                VerificaCaracterProibido(ctrl.Controls);
+                VerificarCaracterProibido(ctrl.Controls);
             }
 
             return existeApostrofo;
         }
         // ---------------------------------------------------------------------------------------------------------------------------------------
-
     }
 }

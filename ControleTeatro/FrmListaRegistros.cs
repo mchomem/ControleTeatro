@@ -66,7 +66,7 @@ namespace ControleTeatro
         private void FrmListaRegistros_Load(object sender, EventArgs e)
         {
             // Centraliza o formulário em relação ao monitor.
-            FormUtils.CentralizaForm(this);
+            FormUtils.CentralizarForm(this);
         }
 
         /// <summary>

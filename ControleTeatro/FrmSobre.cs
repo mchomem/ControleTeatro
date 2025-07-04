@@ -12,7 +12,7 @@ namespace ControleTeatro
 
         private void FrmSobre_Load(object sender, EventArgs e)
         {
-            FormUtils.CentralizaForm(this);
+            FormUtils.CentralizarForm(this);
             this.lblVersaoProduto.Text +=  " " + Application.ProductVersion;
         }
 
