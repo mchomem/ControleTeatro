@@ -20,21 +20,21 @@ namespace ControleTeatro.Helpers
         /// <summary>
         /// Método para centralizar formulários no Desktop.
         /// </summary>
-        /// <param name="frm">Objeto do tipo formulário.</param>
-        public static void CentralizarForm(Form frm, bool mdiChield = false, Form frmParent = null)
+        /// <param name="form">Objeto do tipo formulário.</param>
+        public static void CentralizarForm(Form form, bool mdiChield = false, Form formParent = null)
         {
             // Se o formulário pertence a um formulário Mdi container.
             // Centraliza o formulário filho pelo formulário pai.
             if (mdiChield)
             {
-                frm.Top = (frmParent.Height - frm.Height) / 2;
-                frm.Left = (frmParent.Width - frm.Width) / 2; 
+                form.Top = (formParent.Height - form.Height) / 2;
+                form.Left = (formParent.Width - form.Width) / 2; 
             }
             // Se não, centraliza o formulário pelo monitor.
             else
             {
-                frm.Top = (Screen.PrimaryScreen.Bounds.Height - frm.Height) / 2;
-                frm.Left = (Screen.PrimaryScreen.Bounds.Width - frm.Width) / 2;
+                form.Top = (Screen.PrimaryScreen.Bounds.Height - form.Height) / 2;
+                form.Left = (Screen.PrimaryScreen.Bounds.Width - form.Width) / 2;
             }
         }
 
@@ -44,34 +44,34 @@ namespace ControleTeatro.Helpers
         /// <param name="controles">Coleção de controles do formulário.</param>
         public static void InicializarControles(Control.ControlCollection controles)
         {
-            foreach (Control ctrl in controles)
+            foreach (Control control in controles)
             {
-                if (ctrl is TextBox)
+                if (control is TextBox)
                 {
-                    (ctrl as TextBox).Text = String.Empty;
+                    (control as TextBox).Text = string.Empty;
                 }
-                else if (ctrl is CheckBox)
+                else if (control is CheckBox)
                 {
-                    (ctrl as CheckBox).Checked = false;
+                    (control as CheckBox).Checked = false;
                 }
-                else if (ctrl is ComboBox)
+                else if (control is ComboBox)
                 {
-                    (ctrl as ComboBox).Text = String.Empty;
+                    (control as ComboBox).Text = string.Empty;
                 }
-                else if (ctrl is DateTimePicker)
+                else if (control is DateTimePicker)
                 {
-                    (ctrl as DateTimePicker).Value = DateTime.Now;
+                    (control as DateTimePicker).Value = DateTime.Now;
                 }
-                else if (ctrl is MaskedTextBox)
+                else if (control is MaskedTextBox)
                 {
-                    (ctrl as MaskedTextBox).Text = String.Empty;
+                    (control as MaskedTextBox).Text = string.Empty;
                 }
 
                 // Add mais controles conforme necessidade...
 
                 // Uso do método recursivo utilizando o objeto
                 // Control.ControlCollection como parâmetro.
-                InicializarControles(ctrl.Controls);
+                InicializarControles(control.Controls);
             }
         }
 
@@ -86,13 +86,13 @@ namespace ControleTeatro.Helpers
             bool existeApostrofo =  false;
 
             // Varre todos os controles ca coleção
-            foreach (Control ctrl in controles)
+            foreach (Control control in controles)
             {
                 // Se o controle é uma caixa de texto.
-                if (ctrl is TextBox)
+                if (control is TextBox)
                 {
                     // Se a propriedade Texto do controle contiver uma apóstrofo.
-                    if ((ctrl as TextBox).Text.Contains("'") || (ctrl as TextBox).Text.Contains("|"))
+                    if ((control as TextBox).Text.Contains("'") || (control as TextBox).Text.Contains("|"))
                     {
                         // Variável recebe true;
                         existeApostrofo = true;
@@ -102,7 +102,7 @@ namespace ControleTeatro.Helpers
                     }
                 }
 
-                VerificarCaracterProibido(ctrl.Controls);
+                VerificarCaracterProibido(control.Controls);
             }
 
             return existeApostrofo;

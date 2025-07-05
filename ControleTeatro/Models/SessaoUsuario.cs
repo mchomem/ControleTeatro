@@ -16,22 +16,17 @@ namespace ControleTeatro.Models
     {
         private string nome;
         private string tipoUsuario;
-        private string dthr_login;
-        private string dthr_logout;
-
-        // Construtor padrão da classe.
-        public SessaoUsuario() { }
+        private string dataHoraLogin;
+        private string dataHoraLogout;
         
-        // Sobrecarga do construtor da classe.
-        public SessaoUsuario(string nome, string tipoUsuario, string dthr_login, string dthr_logout)
+        public SessaoUsuario(string nome, string tipoUsuario, string dataHoraLogin, string dataHoraLogout)
         {
             Nome = nome;
             TipoUsuario = tipoUsuario;
-            Dthr_login = dthr_login;
-            Dthr_logout = dthr_logout;
+            Dthr_login = dataHoraLogin;
+            Dthr_logout = dataHoraLogout;
         }
-
-        // Propriedades  da classe ----------------------------
+        
         public string Nome
         {
             get { return nome; }
@@ -46,15 +41,14 @@ namespace ControleTeatro.Models
 
         public string Dthr_login
         {
-            get { return dthr_login; }
-            set { dthr_login = value; }
+            get { return dataHoraLogin; }
+            set { dataHoraLogin = value; }
         }
 
         public string Dthr_logout
         {
-            get { return dthr_logout; }
-            set { dthr_logout = value; }
+            get { return dataHoraLogout; }
+            set { dataHoraLogout = value; }
         }
-        // ----------------------------------------------------
     }
 }

@@ -43,37 +43,37 @@ namespace ControleTeatro
                 {
                     MessageBox.Show(null, "O sistema agora estará operando fora do padrão de configuração de data dd/MM/yyyy.\n" 
                     + " Efeitos colaterais indejesáveis poderão ocorrer por conta disto.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    InciaSistema();
+                    InciarSistema();
                 }
             }
             else
             {
-                InciaSistema();
+                InciarSistema();
             }
         }
 
-        private static void InciaSistema()
+        private static void InciarSistema()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
             // Instancia o formulário de splash da aplicação.
-            FrmSplash frmSplash = new FrmSplash();
+            FrmSplash formSplash = new FrmSplash();
             // Exibe o formulário de splash.
-            frmSplash.ShowDialog();
+            formSplash.ShowDialog();
 
             // Instancia o formulário de login.
-            FrmLogin frmLogin = new FrmLogin();
+            FrmLogin formLogin = new FrmLogin();
 
             // Se o resulta do diálogo for igual a Ok.
-            if (frmLogin.ShowDialog() == DialogResult.OK)
+            if (formLogin.ShowDialog() == DialogResult.OK)
             {
                 // Executa a aplicação no fluxo principal do programa.
                 Application.Run(new FrmPrincipal());
             }
 
             // Encerra somente o formulário de login.
-            frmLogin.Close();
+            formLogin.Close();
         }
     }
 }

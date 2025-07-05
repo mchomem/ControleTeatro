@@ -22,10 +22,7 @@ namespace ControleTeatro
 
         public static void Conectar()
         {
-            //string stringConnection = @"Provider=Microsoft.Jet.OleDb.4.0;Data Source=G:\Faculdade SENAC\Faculdade\3 Semestre\Linguagem_de_Programacao_I\LP1TF\BDTEATRO.MDB";
-
-            string caminhoBase = String.Empty;
-
+            string caminhoBase = string.Empty;
             caminhoBase = Application.StartupPath;
             caminhoBase += @"\BD\";
 
